@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <link href="assets/css/cipherstyle.css" rel="stylesheet">
+    <!-- <link href="assets/css/reset.css" rel="stylesheet"> -->
+    <title>Cipher</title>
+</head>
+
+<body>
+    <h1>Cipher Code </h1>
+    
+    <section class="sectional" id="caesar">
+        <h2>Caesar Cipher</h2>
+        <div>
+            <input placeholder="POSITIVE INTEGER" type="text" id="caesarkey">
+         
+        </div>
+        <br>
+        <div>
+            <input placeholder="INPUT MESSAGE" type="text" id="message"> 
+            <button id="getmessage">DECODE</button>
+        </div>
+        <div>
+            <p id="printmessage">Result: </p>
+        </div>
+    </section>
+    <hr>
+    <hr><hr><hr><hr><hr><hr>
+    <section class="sectional" id="vigenere">
+        <h2>Vigenere Cipher</h2>
+        <div>
+            <input placeholder="VIGENERE KEY" type="text" id="vigenerekey"> 
+           
+        </div>
+        <div>
+            <input placeholder="INPUT MESSAGE" type="text" id="messagev">
+            <button id="getmessagev">DECODE</button>
+        </div>
+        <div>
+            <p id="printmessagev">Result: </p>
+        </div>
+    </section>
+    <div id="reset">
+    <button class="resetbutton">RESET</button>
+    </div>
+    <script src="assets/javascript/cipher.js">
+    </script>
+</body>
+
+</html>

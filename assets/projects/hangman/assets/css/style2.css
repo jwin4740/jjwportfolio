@@ -1,0 +1,172 @@
+html {
+    background: url(../images/nfllogohope.jpg) no-repeat center center fixed;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+
+body {
+    background-color: transparent;
+}
+
+#totustuus {
+    margin: 0px;
+}
+
+#title {
+    color: red;
+    font-size: 70px;
+    font-weight: 600;
+    font-family: 'Allerta Stencil', sans-serif;
+    background: -webkit-linear-gradient(red, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#score {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Allerta Stencil', sans-serif;
+    background: -webkit-linear-gradient(red, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main {
+    position: relative;
+    float: left;
+    top: 175px;
+    left: 25px;
+    width: 450px;
+    height: 350px;
+    border: solid 5px black;
+}
+
+.drawing {
+    position: relative;
+    float: right;
+    width: 200px;
+    height: 350px;
+    top: 135px;
+    border: dashed 5px black;
+    margin-right: 175px;
+    margin-top: 35px;
+}
+
+#board {
+    margin: 0 auto;
+    height: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 12px;
+}
+
+.insert {
+    display: inline-block;
+    padding-left: 8px;
+    font-size: 24px;
+    font-weight: 700px;
+    border-bottom: solid 3px black;
+    margin-left: 10px;
+    text-align: center;
+    color: #b7c5df;
+}
+
+.guesser {
+    display: inline-block;
+    width: 50px;
+    font-size: 30px;
+    font-weight: 700px;
+    margin-left: 5px;
+    text-align: center;
+    color: black;
+}
+
+#replace {
+    display: inline-block;
+    width: 50px;
+    border-bottom: solid 3px black;
+    font-size: 30px;
+    font-weight: 700px;
+    margin-left: 5px;
+    text-align: center;
+    color: #b7c5df;
+}
+
+
+/*Scroll animation*/
+
+/*.wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 75px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.wrapper p {
+    position: absolute;
+    margin: 0;
+    line-height: 65px;
+    white-space: nowrap;
+    animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee{
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+*/
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 25px;
+  width: 100px;
+  border: 1px solid orange;
+}
+
+.wrapper p {
+  position: absolute;
+  margin: 0;
+  line-height: 25px;
+  white-space: nowrap;
+  animation: marquee 1s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+/*.wrapper2 {
+  position: relative;
+  overflow: hidden;
+  height: 75px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.wrapper2 p {
+  position: absolute;
+  margin: 0;
+  line-height: 65px;
+  white-space: nowrap;
+  animation: marquees 10s linear infinite;
+}
+
+/*@keyframes marquees {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(50%); }
+}*/
+
+
+/**/

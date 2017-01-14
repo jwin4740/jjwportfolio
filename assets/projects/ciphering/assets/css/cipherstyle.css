@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    background-image: url("../images/safe.jpg");
+    background-size: cover;
+}
+
+.sectional {
+    float: left;
+    width: 900px;
+    border: solid 3px black;
+    margin-top: 10px margin-bottom: 5px;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    height: 25px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+hr {
+    clear: both;
+    margin: 4px 0px 4px 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#reset {
+    clear: both;
+    margin-top: 0px;
+}
+
+.resetbutton {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    margin: 0px;
+    width: 900px;
+}

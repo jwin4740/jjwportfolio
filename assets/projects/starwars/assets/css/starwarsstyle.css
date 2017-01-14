@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/mainspace.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#instructions{
+    font-size: 20px;
+    color: yellow;
+    margin-bottom: 25px;
+}
+
+/*player images*/
+.pimage{
+    width: 200px;
+    height: 150px; 
+}
+h4{
+    margin: 3px;
+}
+#choosebox{
+    margin-left: 185px;
+}
+.player{
+    float: left;
+    margin: 0px 10px 0px 10px;
+    border: solid 7px purple;
+    cursor: pointer;
+
+}
+
+.hovers {
+    float: left;
+    margin: 0px 10px 0px 10px;
+    border: solid 7px purple;
+}
+
+.hovers:hover {
+    float: left;
+    margin: 0px 10px 0px 10px;
+    border: solid 7px yellow;
+    cursor: pointer;
+}
+
+#gamewindow{
+    float: left;
+    border: solid 2px white;
+    height: 150px;
+    width: 600px;
+    background-color: black;
+    font-size: 18px;
+}
+#attackerbox{
+    float: left;
+    height: 250px;
+    width: 600px;
+}
+
+.attacker{
+    border: solid 7px green; 
+    float: left;
+    margin: 0px 10px 0px 10px;
+   
+}
+
+#defenderbox{
+    float: left;
+    height: 250px;
+    width: 600px;
+}
+
+#defenderondeckbox{
+    float: left;
+    height: 250px;
+    width: 600px;
+}
+
+
+button{
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    color: white;
+}
+
+.defender{ 
+    float: left;
+    margin: 0px 10px 0px 10px;
+    border: solid 7px red;
+
+}

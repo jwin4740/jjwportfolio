@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script type='text/javascript' src='http://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js'></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <title>Hangman NFL</title>
+</head>
+
+<body>
+    <div id="totustuus">
+        <header>
+            <div class="marqueetop"><span id="title">NFL Themed Hangman</span></div>
+        </header>
+        <main class="main">
+            <audio autoplay>
+                <source src="assets/nflfoxthemecut.mp3">
+            </audio>
+            <div style="float: left; margin: 10px 0px 10px 170px;  font-weight: 900; padding: 3px; font-size: 24px; border: dotted 1px black"> DIRECTIONS: type your guess to reveal letters. Click the "PLAY AGAIN" button to replay</div>
+            <section class="content">
+                <h1> Let's play hangman</h1>
+                <div id="board">
+                </div>
+                <h2> Guesses </h2>
+                <div id="guesses">
+                </div>
+                <div id="alert"></div>
+                <div id="gamestatus"></div>
+            </section>
+            <div id="remaining">
+                <h1 style="margin-top: 5px; margin-bottom: 0px;">GUESSES LEFT</h1>
+                    <div id="remainingNumber">
+                        
+                    </div>
+            </div>
+            <div class="buttons">
+                <button class="replay"> PLAY AGAIN</button>
+            </div>
+        </main>
+        <footer>
+            <div class="marqueebottom"><span style="margin-right: 60px;" id="win"> WINS: <span id="winner"></span> </span><span id="loss"> LOSSES: <span id="loser"></span></span><span style="margin-left: 75px; color: white; font-size: 25px;">sponsored by JAMES J WINKLE</span></div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

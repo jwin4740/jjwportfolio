@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/mainspace.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    font-weight: 900;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+}
+
+button {
+    background-color: black;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+
+/*#arena {
+    display: none;
+    overflow: hidden;
+    background-image: url(../images/setting.png);
+    background-size: cover;
+    border: solid 5px white;
+    position: absolute;
+    top: 20px;
+    left: 175px;
+    width: 1000px;
+    height: 600px;
+}
+*/
+
+.hover{
+    border: solid 5px yellow;
+}
+
+.enemy1 {
+    margin-left: 25px;
+    border: solid 5px purple;
+}
+
+.enemy2 {
+    margin-left: 25px;
+    border: solid 5px purple;
+}
+
+.enemy3 {
+    margin-left: 25px;
+    border: solid 5px purple;
+}
+.currentenemy {
+    margin-left: 25px;
+    border: solid 5px red;
+}
+.attacker {
+    border: solid 5px green;
+}
+
+#playerbox {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.player {
+    height: 200px;
+    width: 200px;
+    background-image: cover;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.playerselect {
+    height: 200px;
+    width: 200px;
+    background-image: cover;
+    cursor: pointer;
+    opacity: 0.9;
+    border: solid 5px green;
+}
+
+.playerenemy {
+    height: 200px;
+    width: 200px;
+    background-image: cover;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 5px;
+    border: solid 5px red;
+    margin-right: 15px;
+}
+
+.playerdiv {
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*.lightsaber {
+    position: absolute;
+    z-index: 100;
+    border: solid 1px white;
+    background-color: white;
+    height: 25px;
+    width: 12px;
+    top: 110px;
+    left: 75px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+*/

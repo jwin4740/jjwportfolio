@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    <link rel="stylesheet" href="greetingcardstyle.css">
+    <script src="greetingcardjjw.js"></script>
+    <!-- <link rel="stylesheet" href="back.css"> -->
+    <title>Greeting Card</title>
+</head>
+
+<body>
+
+
+ <div class="leftpane no-print">
+            <h1 class="numbers" id="header">Create Your Card!!</h1>
+            <h3 class="numbers"> 1) Hover over card to flip the card over </h3>
+            <h3 class="numbers"> 2) On the right, click the gold button titled 'To', and you will be prompted to give the name of the card recipient</h3> 
+            <h3 class="numbers"> 3) Repeat step 2 for the 'Message' and 'From' buttons</h3>
+            <h3 class="numbers"> 4) Flip card over to see the final product. If you don't like the content you typed, you can just reclick the button you want to edit</h3>
+            <h3 class="numbers"> 5) Enter desired email address in the box below the card and click the send button</h3>
+            <h3 class="numbers"> 5) Click the print button</h3>   
+        </div>
+    <main>
+
+        <div class="buttons no-print">
+            <button class="instruct" onclick="gettoname()">    To</button>
+            <button class="instruct" onclick="getmessage()">    Message</button>
+            <button class="instruct" onclick="getfromname()">From</button>   
+        </div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                    <img class="card" src="christmas.jpg" alt="christmas card cover">
+                </div>
+                <div id="back">
+                    <div id="innerhead">
+                        <p class="tofrom"> To: </p>
+                        <p id="to"></p>
+                    </div>
+
+                    <div id="inner">
+                        <div id="message"></div>
+                    </div>
+
+                    <div id="innerfoot">
+                        <p class="tofrom"> From: </p>
+                        <p id="from"></p>  
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="email no-print"> 
+            <strong><p style="font-size: 40px; color: black;">Email address:  </p></strong>
+            	<input placeholder="example@gmail.com" style="font-size: 20px; border-radius: 6px; height: 30px; width: 150px;">
+                <button onclick="sent()" id="action" class="send">Send</button>
+                <button onclick="printPage()" id="action" class="print">Print</button>
+        </div>
+    </div>    
+    </main>
+
+</body>
+
+</html>

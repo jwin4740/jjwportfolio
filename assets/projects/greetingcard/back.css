@@ -1,0 +1,9 @@
+html{
+	background-color: green;
+}
+
+.card{
+	margin-top: 50px;
+	height: 350px;
+	width: 600px;
+}

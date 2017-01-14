@@ -1,0 +1,266 @@
+*{
+	box-sizing: border-box;
+	
+}
+
+html {
+	min-height: 100%;
+	background: linear-gradient(to bottom, #084912, #62c96e);
+
+}
+
+
+main {
+	clear: both;	
+	text-align: center;
+}
+
+.leftpane{
+	clear: both;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 270px;
+	border: dotted 2px black;
+}
+
+.numbers{
+	font-family: 'Arial';
+	text-align: left; 
+	width: 95%;
+	color: black;
+	font-weight: 750;
+	font-size: 14px;
+	margin-bottom: 20px;
+	margin-left: 2.5%;
+	margin-top: 0px;
+}
+
+#header{
+	font-size: 40px; 
+	color: #daa520; 
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-family: 'Italianno', cursive;
+	font-weight: 600;
+	text-align: center;
+}
+
+.buttons{
+	clear: both;
+	position: absolute;
+	top: 155px;
+	left: 1150px;
+	height: 350px;
+	width: 150px;
+	
+}
+
+.instruct{
+	font-family: 'Arial';
+	text-align: center; 
+	width: 100%;
+	color: grey;
+	font-size: 16px;
+	font-style: italic;
+	padding: 10px;
+	font-weight: 900;
+	margin-bottom: 90px;
+	background-color: #daa520;
+	border: solid 1px #daa520;
+	box-shadow: 2px 2px 2px grey;
+	border-radius: 3px;
+
+}
+
+.instruct:hover{
+	font-family: 'Arial';
+	text-align: center; 
+	width: 100%;
+	color: grey;
+	font-size: 16px;
+	font-style: italic;
+	padding: 10px;
+	font-weight: 900;
+	margin-bottom: 90px;
+	background-color: #ffff66;
+	border: solid 1px #daa520;
+	box-shadow: 2px 2px 2px grey;
+	border-radius: 3px;
+	cursor: pointer;
+
+}
+.email{
+	font-family: 'Italianno', cursive;
+	margin-top: 50px;
+	
+}
+
+#innerhead{
+	
+	height: 20%;
+	text-align: left;
+	margin-left: 175px;
+
+}
+
+#inner{
+	height: 60%;
+	margin-left: 175px;
+	text-align: center;
+	position: relative;
+}
+
+#innerfoot{
+	height: 20%;
+	text-align: right;
+	margin-right: 50px;
+}
+
+.tofrom{
+	font-family: 'Arial'; 
+	font-weight: 300; 
+	margin-right: 20px;
+	font-size: 30px; 
+	color: #daa520;"
+}
+
+.people{
+	width: 200px;
+	height: 60px;
+}
+
+input{
+	
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'Italianno';
+}
+
+#message {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Italianno', cursive;
+  color: #a9a9a9;
+  font-weight: 600;
+  margin-left: 10%;
+  margin-right: 10%; 
+  font-size: 30px;
+  text-align: center; 
+
+}
+
+p{
+	position: relative;
+	top: 6px;
+	display: inline;
+	font-family: 'Italianno', cursive;
+	 font-size: 50px;
+   	color: #a9a9a9;
+   	font-weight: 900;
+}
+
+#action{
+	color: black;
+	border-radius: 4px;
+	margin: 10px;
+	height: 35px;
+	width: 50px;
+	font-size: 14px;
+	border-color: grey;
+	opacity: 0.9;
+	font-weight: 600;
+	font-family: 'Arial', cursive;
+}
+
+
+
+.send{
+	background-color: orange;
+}
+
+.print{
+	background-color: red;
+}
+
+.send:hover{
+	background-color: #ffc966;
+	cursor: pointer;
+}
+
+.print:hover{
+	background-color: #ff6666;
+	cursor: pointer;
+}
+input{
+	text-align: center;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+margin-left: 366.5px;
+	perspective: 1000px;
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 600px;
+	height: 350px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 1.0s;
+	transform-style: preserve-3d;
+	margin-top: 140px;
+	
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+img{
+	height: 350px;
+	width: 600px;
+}
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	height: 350px;
+	width: 600px;
+	border: solid 1px #daa520;
+	
+}
+
+
+
+/* back, initially hidden pane */
+#back {
+	transform: rotateY(180deg);
+	height: 350px;
+	width: 600px;
+	background-image: url("content.jpg");
+	border: solid 1px #daa520;
+	background-size: 600px 350px;
+}
+
+
+@media print{
+	 .no-print, .no-print *
+    {
+        display: none !important;
+    }
+
+}

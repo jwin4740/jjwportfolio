@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+    <!-- <link rel="stylesheet" href=-iuoassets/css/reset.css> -->
+    <!-- <link rel="stylesheet" href="assets/css/jjwstylelibrary.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Blackjack </title>
+</head>
+
+<body>
+    <h2> Blackjack </h2>
+    <button class="but" id="deal">DEAL</button>
+    <button class="but" id="reload">RELOAD</button>
+    <button class="but" id="hitplayer">Hitplayer</button>
+    <button class="but" id="hitdealer">Hitdealer</button>
+    <button class="but" id="double">Double Down</button>
+    <button class="but" id="finish">Finish</button>
+    <div class="handboxcontainer">
+        <div class="contain">
+            <div class="handbox">
+                <h2 class="title">Dealer Hand</h2>
+                <h2 class="sums" id="dealerSum"></h2>
+                <div id="dealerHand">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="handboxcontainer">
+        <div class="contain">
+            <div class="handbox">
+                <h2 class="title">Player Hand</h2>
+                <h2 class="sums" id="playerSum"></h2>
+                <div id="playerHand">
+                </div>
+            </div>
+            <div class="wealth">
+                <div class="wealthcontainers">
+                    <div class="chipsum">
+                        <h3 class="title"> CHIP COUNT: &nbsp; &nbsp; $&nbsp;<span id="chipCount"> </span></h3>
+                    </div>
+                </div>
+                <div class="wealthcontainers">
+                    <div class="bet">
+                        <h3 class="title"> CURRENT BET: &nbsp; &nbsp;$&nbsp;<span id="currentBet"> </span> </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="card">
+    </div>
+    <audio id="moneysound" src="assets/av/money.mp3"></audio>
+</body>
+
+</html>

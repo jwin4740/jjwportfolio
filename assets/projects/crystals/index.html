@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <!-- Added link to the javascript file -->
+    <script src="assets/javascript/game.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--  <link rel="stylesheet" href=assets/css/reset.css>
+ -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> JJW Crystal Collector </title>
+</head>
+
+<body>
+    <audio loop autoplay alt="www.bensound.com" src="assets/av/bensound.mp3"></audio>
+    <div class="container">
+        <div style=" text-decoration: underline; font-size: 36px;" class="row" id="one">
+            Crystal Collector
+        </div>
+        <div class="row" id="two">
+            <div class="col-md-12">
+                <p>
+                    ON SETUP: A random number between 20 and 120, inclusive will be generated. Each crystal will be assigned a random number between 1 and 12, inclusive. The "Current Total" box will be set to 0.
+                </p>
+                <p>
+                    When you click on a crystal, it will add that value to the "Current Total" box. By clicking on different crystals and deducing their values, you must get your Current Total to equal the generated number. Then you win!! After you win or lose, click the "Play Again" button. </p>
+            </div>
+        </div>
+        <div class="row" id="three">
+            <h3 style="font-weight: 700; text-decoration: underline; ">Random Number</h3>
+            <div id="genNumber">
+            </div>
+            <div id="crystals">
+                <img class="gem blues" id="blue" alt="colored-gem" src="assets/images/blue.png">
+                <img class="gem greens" id="green" alt="colored-gem" src="assets/images/green.png">
+                <img class="gem reds" id="red" alt="colored-gem" src="assets/images/red.png">
+                <img class="gem purples" id="purple" alt="colored-gem" src="assets/images/purple.png">
+            </div>
+        </div>
+        <div class="row" id="five">
+            <button style="width: 200px; border-radius: 5px; background-color: green; font-size: 20px; float: right; padding: 15px; margin-left: 25px;" id="buttonreset">PLAY AGAIN</button>
+            <h3 style="padding: 2px;text-align: left; text-decoration: underline; font-weight: 700;"> Current Total</h3>
+            <div class="scorebox">
+                <p class="scorecount"> &nbsp; TOTAL WINS: &nbsp; <span id="wins"></span></p>
+                <p class="scorecount"> &nbsp; TOTAL LOSSES: &nbsp;<span id="loss"></span></p>
+            </div>
+            <div class="totscore">0
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

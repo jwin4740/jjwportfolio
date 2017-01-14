@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/greenfelt.png");
+    background: cover;
+    color: white;
+}
+
+.but {
+    margin-bottom: 25px;
+    width: 75px;
+    height: 25px;
+}
+
+.snap {
+    border: solid 2px gray;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 85px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.handboxcontainer {
+    clear: both;
+    width: 1300px;
+    height: 240px;
+    margin-bottom: 10px;
+}
+
+.handbox {
+    float: left;
+    width: 880px;
+    height: 220px;
+    margin: 10px;
+}
+
+.title {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sums {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+}
+
+.contain {
+    border: solid 5px black;
+    height: 220px;
+}
+
+.wealth {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: dotted 5px black;
+    width: 275px;
+    height: 175px;
+    padding: 10px;
+}
+
+.wealthcontainers{
+	float: left;
+}
+
+.chipsum {
+    position: relative;
+    float: left;
+    border: solid 5px yellow;
+    width: 230px;
+    height: 60px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.bet {
+    position: relative;
+    float: left;
+    border: solid 4px purple;
+    width: 230px;
+    height: 60px;
+    padding: 5px;
+    margin-right: 5px;
+}

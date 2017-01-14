@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/redoak.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    font-weight: 900;
+    font-size: 16px;
+    color: black;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+
+.col-md-1 {
+    margin-right: 5px;
+}
+
+#genNumber {
+    float: left;
+    height: 100px;
+    width: 205px;
+    text-align: center;
+    border: solid 4px black;
+    font-size: 36px;
+}
+
+#crystals {
+    float: left;
+    margin-left: 75px;
+}
+
+img.gem {
+    float: left;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.reds,
+.purples,
+.greens,
+.blues {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 10s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotateZ(0deg);
+    }
+    to {
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+#five {
+    clear: both;
+}
+
+.totscore {
+    float: left;
+    height: 75px;
+    width: 100px;
+    border: dotted 2px black;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 10px;
+    font-size: 36px;
+}
+
+.scorebox {
+    float: right;
+    height: 150px;
+    width: 400px;
+    margin-right: 300px;
+}
+
+.scorecount {
+    font-size: 24px;
+}
